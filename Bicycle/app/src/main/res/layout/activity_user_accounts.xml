@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.larsson.bicycle.UserAccounts">
+
+    <ImageView
+        android:id="@+id/heading"
+        android:layout_width="423dp"
+        android:layout_height="58dp"
+        app:srcCompat="@drawable/header"
+        tools:layout_editor_absoluteX="-19dp"
+        tools:layout_editor_absoluteY="-2dp"
+        android:layout_marginTop="0dp"/>
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="49dp"
+        android:layout_height="47dp"
+        android:background="@drawable/logout"
+        android:onClick="onClickLogout"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="9dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/userdetails"
+        android:layout_width="130dp"
+        android:layout_height="153dp"
+        android:layout_above="@+id/history"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginBottom="24dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginStart="42dp"
+        android:background="@drawable/userdetails"
+        android:onClick="onClickDetails" />
+
+    <Button
+        android:id="@+id/history"
+        android:layout_width="130dp"
+        android:layout_height="153dp"
+        android:layout_marginBottom="136dp"
+        android:background="@drawable/history"
+        android:onClick="onClickHistory"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/userdetails"
+        android:layout_alignStart="@+id/userdetails" />
+
+    <Button
+        android:id="@+id/recharge"
+        android:layout_width="110dp"
+        android:layout_height="120dp"
+        android:layout_alignBottom="@+id/userdetails"
+        android:layout_toLeftOf="@+id/logout"
+        android:layout_toStartOf="@+id/logout"
+        android:background="@drawable/recharge"
+        android:onClick="onClickRecharge" />
+
+    <Button
+        android:id="@+id/rechhist"
+        android:layout_width="160dp"
+        android:layout_height="140dp"
+        android:background="@drawable/rechhist"
+
+        android:layout_alignBottom="@+id/history"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="14dp" />
+
+
+</RelativeLayout>

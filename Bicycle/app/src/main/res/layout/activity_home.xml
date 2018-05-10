@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.larsson.bicycle.Home">
+
+
+    <ImageView
+        android:id="@+id/heading"
+        android:layout_width="423dp"
+        android:layout_height="58dp"
+        app:srcCompat="@drawable/header"
+        tools:layout_editor_absoluteX="-19dp"
+        tools:layout_editor_absoluteY="-2dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="49dp"
+        android:layout_height="47dp"
+        android:background="@drawable/logout"
+        android:onClick="onClickLogout"
+        tools:layout_editor_absoluteX="319dp"
+        tools:layout_editor_absoluteY="9dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/heading"
+        android:text="Welcome: "
+        android:textColor="@color/user"
+        android:textSize="22sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+
+        android:layout_below="@id/heading"
+        android:layout_toRightOf="@id/textView6"
+        android:layout_marginTop="20dp"
+        android:fontFamily="monospace"
+        android:layout_marginLeft="5dp"
+        android:textColor="@color/user"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/rent"
+        android:layout_width="114dp"
+        android:layout_height="153dp"
+        android:layout_below="@+id/heading"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/rentabike"
+        android:onClick="onClickRent"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <Button
+        android:id="@+id/station"
+        android:layout_width="146dp"
+        android:layout_height="155dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/rent"
+        android:layout_marginEnd="27dp"
+        android:layout_marginRight="27dp"
+
+        android:background="@drawable/stationnearby"
+        android:onClick="onClickStation"
+        tools:layout_editor_absoluteX="205dp"
+        tools:layout_editor_absoluteY="111dp" />
+
+    <Button
+        android:id="@+id/user"
+        android:layout_width="112dp"
+        android:layout_height="99dp"
+        android:layout_alignLeft="@+id/rent"
+        android:layout_alignStart="@+id/rent"
+        android:layout_below="@+id/station"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/user"
+        android:onClick="onClickUser"
+        tools:layout_editor_absoluteX="39dp"
+        tools:layout_editor_absoluteY="295dp" />
+
+    <Button
+        android:id="@+id/settings"
+        android:layout_width="85dp"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/user"
+        android:layout_marginEnd="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_toLeftOf="@+id/logout"
+        android:layout_toStartOf="@+id/logout"
+        android:background="@drawable/settings"
+        tools:layout_editor_absoluteX="235dp"
+        tools:layout_editor_absoluteY="295dp"
+       />
+    /*android:onClick="onClickSettings"*/
+
+
+
+
+
+</RelativeLayout>

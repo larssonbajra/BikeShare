@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.larsson.bicycle.rent_here">
+
+    <ImageView
+        android:id="@+id/heading"
+        android:layout_width="423dp"
+        android:layout_height="58dp"
+        app:srcCompat="@drawable/header"
+        tools:layout_editor_absoluteX="-17dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="49dp"
+        android:layout_height="47dp"
+        android:background="@drawable/logout"
+        android:onClick="onClickLogout"
+        tools:layout_editor_absoluteX="324dp"
+        tools:layout_editor_absoluteY="7dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="151dp"
+        android:layout_height="34dp"
+        app:srcCompat="@drawable/stat"
+        tools:layout_editor_absoluteX="65dp"
+        tools:layout_editor_absoluteY="143dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginLeft="50dp"/>
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="151dp"
+        android:layout_height="34dp"
+        app:srcCompat="@drawable/bike"
+        android:layout_alignTop="@+id/textView"
+        android:layout_alignLeft="@+id/imageView9"
+        android:layout_alignStart="@+id/imageView9" />
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/group3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_toRightOf="@+id/imageView9"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="143dp" />
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@drawable/group3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="210dp"
+        android:layout_toRightOf="@+id/imageView9"
+        tools:layout_editor_absoluteX="251dp"
+        tools:layout_editor_absoluteY="143dp" />
+
+    <Button
+        android:id="@+id/rentPass"
+        android:layout_width="350dp"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="19dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/group3"
+        android:onClick="onClickRent"
+        android:text="Rent Now" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/imageView9"
+        android:layout_alignStart="@+id/imageView9"
+        android:layout_below="@+id/imageView9"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="40dp" />
+
+
+
+
+</RelativeLayout>

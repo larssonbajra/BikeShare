@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Bicycle</string>
+    <string name="title_activity_nearby_station">Map</string>
+    <string name="title_activity_nearby">Map</string>
+    <string name="payment">Payment</string>
+    <string-array name="payment_array">
+        <item>3 months (Rs 200)</item>
+        <item>6 months (Rs 350)</item>
+        <item>1 year (Rs 500)</item>
+    </string-array>
+    <string name="title_activity_comment">Comment</string>
+</resources>
